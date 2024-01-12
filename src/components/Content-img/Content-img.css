@@ -1,0 +1,17 @@
+.content-img {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.content-text {
+  width: 50%;
+  color: #000;
+  padding-right: 6%;
+}
+.content-text-img {
+  width: 50%;
+  padding-left: 14%;
+}
+
+.content-text-img img {
+  width: 100%;
+}
