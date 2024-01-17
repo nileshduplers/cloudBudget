@@ -11,7 +11,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+* {
+  box-sizing: border-box;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -21,12 +23,30 @@ a {
 a:hover {
   color: #535bf2;
 }
-
+input {
+  transition: all 0.3s ease-in-out;
+}
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   font-family: "Lato", sans-serif;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(19, 39, 67, 0.5);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(19, 39, 67, 0.5);
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(19, 39, 67, 0.5);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(19, 39, 67, 0.5);
 }
 
 h1 {
@@ -52,6 +72,7 @@ h2 {
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 .d-flex {
@@ -72,11 +93,36 @@ h2 {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  padding: 16px 52px;
+  padding: 16px 52px 15px;
 }
 
 .btn-white {
   background-color: #fff;
   border-color: #fff;
   color: #ed4c5c;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+  .btn {
+    font-size: 14px;
+
+    padding: 14px 46px 14px;
+  }
+  .d-flex {
+    flex-wrap: wrap;
+  }
+  input,
+  select {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
 }

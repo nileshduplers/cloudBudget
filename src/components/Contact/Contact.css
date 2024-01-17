@@ -1,0 +1,93 @@
+.contact {
+  padding: 117px 0;
+}
+
+.contact-content {
+  width: 50%;
+  color: #000;
+  padding-right: 15%;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-content p {
+  font-size: 14px;
+}
+
+input,
+select {
+  border-radius: 6px;
+  border: 1px solid #333;
+  padding: 20px 31px;
+  color: rgba(19, 39, 67, 0.5);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+.half-input {
+  width: 47%;
+  margin-bottom: 24px;
+}
+
+.full-input {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.contact-form .d-flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input[type="submit"] {
+  border-radius: 6px;
+  border: 1.5px solid #ed4c5c;
+  background: #ed4c5c;
+  width: 160px;
+  height: 50px;
+  color: #fff;
+  line-height: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #000;
+  border-color: #000;
+}
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .contact-content {
+    padding-right: 5%;
+  }
+  .contact {
+    padding: 67px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 20px 0 50px;
+  }
+  .contact-content {
+    padding-right: 0;
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+    padding-top: 30px;
+  }
+}

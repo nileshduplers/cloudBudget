@@ -15,3 +15,84 @@
 .content-text-img img {
   width: 100%;
 }
+
+.content-img a {
+  color: #ed4c5c;
+
+  font-size: 14px;
+
+  font-weight: 400;
+  line-height: 140%;
+}
+.content-img a:hover {
+  color: #000;
+}
+
+.content-img img {
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 30px;
+  }
+  .content-text {
+    padding-right: 0%;
+  }
+  .content-text-img {
+    padding-left: 8%;
+  }
+  .content-img {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features {
+    padding: 30px 0 30px 0;
+  }
+  .features-box-wrap {
+    margin: 45px -15px;
+  }
+  .features-box-content {
+    padding: 15px 20px;
+    width: calc(100% - 96px);
+  }
+  .features-box-content h3 {
+    font-size: 16px;
+  }
+  .technology-content:after {
+    font-size: 84px;
+  }
+  .stay-focus {
+    padding: 54px 0;
+  }
+  .stay-focus-content {
+    padding-right: 1%;
+  }
+  .contact-content {
+    padding-right: 5%;
+  }
+  .contact {
+    padding: 67px 0;
+  }
+  footer {
+    padding: 32px 0;
+  }
+  input,
+  select {
+    padding: 16px 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-text {
+    width: 100%;
+  }
+  .content-text-img {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .content-img {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
